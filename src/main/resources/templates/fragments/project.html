@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<th:block th:fragment="projects-section">
+    <section class="projects" id="projects">
+        <div class="container projects-container">
+
+            <h2 class="section-title">Projects</h2>
+            <p class="projects-intro">
+                Here are some of the projects I’ve worked on, showcasing my skills in
+                <span class="highlight">Java, C++, Spring Boot, and problem-solving.</span>
+            </p>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>📂 Customised Virtual File System (CVFS)</h3>
+                    <p>
+                        <strong>Tech:</strong> C++
+                        Emulates OS-level file system structures like Inode, File Table, and Superblock.
+                        Implements system calls (Open, Close, Read, Write, Create, LS, Stat, etc.).
+                        Provides a simplified overview of UNIX File System.
+                    </p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>🗄️ Customised Database Management System (DBMS)</h3>
+                    <p>
+                        <strong>Tech:</strong> Java
+                        Virtual DBMS with SQL-like query support.
+                        Built using Java Collections to implement database operations.
+                        Demonstrates concepts of data storage and query execution.
+                    </p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3>📦 File Packer & Unpacker</h3>
+                    <p>
+                        <strong>Tech:</strong> Java
+                        Packs multiple files into one and unpacks them back.
+                        Works like a zip/unzip tool with separate packing & unpacking logic.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="github-link">
+                <a href="https://github.com/nirajkshirsagar007" target="_blank">🔗 View More on GitHub</a>
+            </div>
+
+        </div>
+        <a href="#experience" class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </section>
+</th:block>
+</html>

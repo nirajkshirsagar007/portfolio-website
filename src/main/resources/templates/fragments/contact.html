@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<th:block th:fragment="contact-section">
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-intro">
+        Let’s get in touch! Whether you have a question, want to collaborate,
+        or just say hi — feel free to reach out.
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <p>📍 Pune, Maharashtra, India</p>
+          <p>📧 <a href="mailto:nirajkshirsagar007@gmail.com">nirajkshirsagar007@gmail.com</a></p>
+          <p>📱 +91 9370507643</p>
+
+          <!-- Social Icons Row -->
+          <div class="contact-icons">
+            <a href="mailto:nirajkshirsagar007@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/nirajkshirsagar007" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/niraj-kshirsagar-7439702bb/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" method="post" th:action="@{/send-message}">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+</th:block>
+</html>

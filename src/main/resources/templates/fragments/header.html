@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<th:block th:fragment="site-header">
+    <header class="header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo"><span>N.K.</span></div>
+
+            <!-- Navigation -->
+            <nav class="nav">
+                <div class="nav-links" id="nav-links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="/resume/Niraj_Kshirsagar_Resume.pdf" target="_blank" class="nav-link">Resume</a>
+                </div>
+            </nav>
+
+            <!-- Mobile Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+</th:block>
+</html>

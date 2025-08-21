@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width = device-width, initial-scale=1.0 ">
+    <title>Niraj Kshirsagar - Personal Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+          integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+<!-- loading animation -->
+<div th:replace = "~{fragments/loader :: loader}"></div>
+
+<!--background shapes-->
+<div class="floating-shape shape-1"></div>
+<div class="floating-shape shape-2"></div>
+<div class="floating-shape shape-3"></div>
+
+<!--header-->
+<div th:replace = "~{fragments/header :: site-header}"></div>
+
+<!--Hero section-->
+<div th:replace = "~{fragments/hero :: hero-section}"></div>
+
+<!--Hero section-->
+<div th:replace = "~{fragments/about :: about-section}"></div>
+
+<!--project section-->
+<div th:replace = "~{fragments/project :: projects-section}"></div>
+
+<!--Experiance section-->
+<div th:replace = "~{fragments/experience ::experience-section}"></div>
+
+<!--Experiance section-->
+<div th:replace = "~{fragments/contact ::contact-section}"></div>
+
+<!--footer section-->
+<div th:replace = "~{fragments/footer ::footer-section}"></div>
+<!--custom script file-->
+<script src="/js/script.js"></script>
+
+<div class="cursor-glow"></div>
+
+</body>
+</html>
